@@ -1,16 +1,28 @@
 {
   "name": "use_binaries",
-  "description": "Changes the commands in the scripts sections of your package.json to use local binaries",
+  "description": "A cli tool that changes script paths in your package.json to local cli binaries",
   "version": "0.0.0",
   "author": "Ben Parnell <me@benparnell.com>",
   "bin": {
     "use_binaries": "index.js"
   },
+  "bugs": {
+    "url": "https://github.com/benjaminparnell/use_binaries/issues"
+  },
   "dependencies": {
     "async": "^0.8.0",
     "underscore": "^1.6.0"
   },
+  "homepage": "https://github.com/benjaminparnell/use_binaries",
+  "keywords": [
+    "package",
+    "binaries"
+  ],
   "license": "MIT",
   "main": "index.js",
-  "preferGlobal": true
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benjaminparnell/use_binaries"
+  }
 }
