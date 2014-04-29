@@ -1,7 +1,7 @@
 {
   "name": "use_binaries",
   "description": "A cli tool that changes script paths in your package.json to local cli binaries",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Ben Parnell <me@benparnell.com>",
   "bin": {
     "use_binaries": "index.js"
