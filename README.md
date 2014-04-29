@@ -5,6 +5,6 @@ use the versions contained in `./node_modules/.bin`.
 
 Not published on `npm`, yet.
 
-## License
+##License
 
 MIT
