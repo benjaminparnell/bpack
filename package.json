@@ -10,8 +10,7 @@
     "url": "https://github.com/benjaminparnell/use_binaries/issues"
   },
   "dependencies": {
-    "async": "^0.8.0",
-    "underscore": "^1.6.0"
+    "async": "^0.8.0"
   },
   "homepage": "https://github.com/benjaminparnell/use_binaries",
   "keywords": [
