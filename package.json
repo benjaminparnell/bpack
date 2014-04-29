@@ -10,9 +10,6 @@
     "async": "^0.8.0",
     "underscore": "^1.6.0"
   },
-  "devDependencies": {
-    "mocha": "^1.18.2"
-  },
   "license": "MIT",
   "main": "index.js",
   "preferGlobal": true
