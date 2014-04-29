@@ -10,7 +10,7 @@ async.waterfall([
   function pkgExists(callback) {
     fs.exists(process.cwd () + '/package.json', function (exists) {
       if (exists) {
-        pkg = require(process.cwd() + './package.json')
+        pkg = require(process.cwd() + '/package.json')
         scripts =  pkg.scripts
         callback(null)
       } else {
@@ -20,7 +20,7 @@ async.waterfall([
     })
   },
   function getBinaries(callback) {
-    fs.readdir(process.cwd() + './node_modules/.bin', function (err, files) {
+    fs.readdir(process.cwd() + '/node_modules/.bin', function (err, files) {
       if (err) {
         console.log(err.toString())
         process.exit(1)
@@ -42,7 +42,7 @@ async.waterfall([
     cb(null, pkg)
   }
   ], function (err, res) {
-    fs.writeFile(process.cwd() + './package.json', JSON.stringify(res, null, 2), {encoding: 'utf8'}, function (err) {
+    fs.writeFile(process.cwd() + '/package.json', JSON.stringify(res, null, 2), {encoding: 'utf8'}, function (err) {
       if (err) throw err
       console.log('./node_modules/.bin paths written to package.json scripts.')
     })
