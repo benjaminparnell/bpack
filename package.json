@@ -1,0 +1,11 @@
+{
+  "name": "use_binaries",
+  "version": "0.0.0",
+  "description": "Changes the commands in the scripts sections of your package.json to use local binaries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Parnell <me@benparnell.com>",
+  "license": "MIT"
+}
