@@ -1,18 +1,18 @@
 {
-  "name": "use_binaries",
+  "name": "bpack",
   "description": "A cli tool that changes script paths in your package.json to local cli binaries",
   "version": "0.0.1",
   "author": "Ben Parnell <me@benparnell.com>",
   "bin": {
-    "use_binaries": "index.js"
+    "bpack": "index.js"
   },
   "bugs": {
-    "url": "https://github.com/benjaminparnell/use_binaries/issues"
+    "url": "https://github.com/benjaminparnell/bpack/issues"
   },
   "dependencies": {
     "async": "^0.8.0"
   },
-  "homepage": "https://github.com/benjaminparnell/use_binaries",
+  "homepage": "https://github.com/benjaminparnell/bpack",
   "keywords": [
     "package",
     "binaries"
@@ -22,6 +22,6 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/benjaminparnell/use_binaries"
+    "url": "git://github.com/benjaminparnell/bpack"
   }
 }
