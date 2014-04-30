@@ -6,10 +6,10 @@ var fs = require('fs')
 
 async.waterfall([
   function pkgExists(cb) {
-    fs.exists(process.cwd () + '/package.json', function (exists) {
+    fs.exists(process.cwd() + '/package.json', function (exists) {
       if (exists) {
         pkg = require(process.cwd() + '/package.json')
-        scripts =  pkg.scripts
+        scripts = pkg.scripts
         cb(null)
       } else {
         cb('No package.json found in your project')
