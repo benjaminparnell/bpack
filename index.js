@@ -1,33 +1,31 @@
 #!/usr/bin/env node
 var fs = require('fs')
   , async = require('async')
-  , scripts = null
-  , pkg = null
 
 async.waterfall([
   function pkgExists(cb) {
     fs.exists(process.cwd() + '/package.json', function (exists) {
       if (exists) {
-        pkg = require(process.cwd() + '/package.json')
-        scripts = pkg.scripts
-        cb(null)
+        var pkg = require(process.cwd() + '/package.json')
+          , scripts = pkg.scripts
+        cb(null, pkg, scripts)
       } else {
         cb('No package.json found in your project')
       }
     })
   },
-  function getBinaries(cb) {
+  function getBinaries(pkg, scripts, cb) {
     fs.readdir(process.cwd() + '/node_modules/.bin', function (err, files) {
       if (err) {
         cb(err.toString())
       } else if (files.length === 0) {
         cb('Nothing in ./node_modules/.bin')
       } else {
-        cb(null, files)
+        cb(null, pkg, scripts, files)
       }
     })
   },
-  function useBinaries(bin, cb) {
+  function useBinaries(pkg, scripts, bin, cb) {
     Object.keys(scripts).forEach(function (key) {
       scripts[key] = scripts[key].split(' ').map(function (item) {
         if (bin.indexOf(item) > -1) {
