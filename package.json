@@ -1,7 +1,7 @@
 {
   "name": "bpack",
   "description": "A cli tool that changes script paths in your package.json to local cli binaries",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Ben Parnell <me@benparnell.com>",
   "bin": {
     "bpack": "index.js"
